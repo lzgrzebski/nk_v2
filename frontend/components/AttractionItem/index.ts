@@ -1,0 +1,1 @@
+export { AttractionItem } from './AttractionItem';

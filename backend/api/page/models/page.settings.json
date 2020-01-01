@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Page_components": {
+      "type": "dynamiczone",
+      "components": [
+        "header.header",
+        "text.text",
+        "places.p",
+        "other-places.other-places",
+        "image.image",
+        "link.link"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

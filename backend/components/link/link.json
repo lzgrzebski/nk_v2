@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Link",
+    "icon": "bullhorn"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_link_links"
+}

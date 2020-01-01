@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_header_headers",
+  "info": {
+    "name": "Header",
+    "icon": "text-height"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

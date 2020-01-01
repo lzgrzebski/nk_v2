@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "other_places",
+  "info": {
+    "name": "Other place"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

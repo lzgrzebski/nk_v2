@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "components_images_images",
+  "info": {
+    "name": "Images",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "default": "608x365",
+      "required": true
+    },
+    "columns": {
+      "type": "integer",
+      "default": 2,
+      "required": true,
+      "max": 4,
+      "min": 1
+    }
+  }
+}

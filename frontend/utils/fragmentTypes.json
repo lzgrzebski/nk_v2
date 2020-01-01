@@ -1,0 +1,729 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "OBJECT",
+        "name": "Query",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "ID",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Gallery",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "String",
+        "possibleTypes": null
+      },
+      {
+        "kind": "UNION",
+        "name": "GalleryImagesDynamicZone",
+        "possibleTypes": [
+          {
+            "name": "ComponentImagesImages"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentImagesImages",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Int",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "JSON",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UploadFile",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Float",
+        "possibleTypes": null
+      },
+      {
+        "kind": "UNION",
+        "name": "Morph",
+        "possibleTypes": [
+          {
+            "name": "UsersPermissionsMe"
+          },
+          {
+            "name": "UsersPermissionsMeRole"
+          },
+          {
+            "name": "UsersPermissionsLoginPayload"
+          },
+          {
+            "name": "Gallery"
+          },
+          {
+            "name": "createGalleryPayload"
+          },
+          {
+            "name": "updateGalleryPayload"
+          },
+          {
+            "name": "deleteGalleryPayload"
+          },
+          {
+            "name": "OtherPlaces"
+          },
+          {
+            "name": "createOtherPlacePayload"
+          },
+          {
+            "name": "updateOtherPlacePayload"
+          },
+          {
+            "name": "deleteOtherPlacePayload"
+          },
+          {
+            "name": "Page"
+          },
+          {
+            "name": "createPagePayload"
+          },
+          {
+            "name": "updatePagePayload"
+          },
+          {
+            "name": "deletePagePayload"
+          },
+          {
+            "name": "Places"
+          },
+          {
+            "name": "createPlacePayload"
+          },
+          {
+            "name": "updatePlacePayload"
+          },
+          {
+            "name": "deletePlacePayload"
+          },
+          {
+            "name": "Posts"
+          },
+          {
+            "name": "createPostPayload"
+          },
+          {
+            "name": "updatePostPayload"
+          },
+          {
+            "name": "deletePostPayload"
+          },
+          {
+            "name": "UploadFile"
+          },
+          {
+            "name": "UsersPermissionsPermission"
+          },
+          {
+            "name": "UsersPermissionsRole"
+          },
+          {
+            "name": "createRolePayload"
+          },
+          {
+            "name": "updateRolePayload"
+          },
+          {
+            "name": "deleteRolePayload"
+          },
+          {
+            "name": "UsersPermissionsUser"
+          },
+          {
+            "name": "createUserPayload"
+          },
+          {
+            "name": "updateUserPayload"
+          },
+          {
+            "name": "deleteUserPayload"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UsersPermissionsMe",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UsersPermissionsMeRole",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UsersPermissionsLoginPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createGalleryPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateGalleryPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteGalleryPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "OtherPlaces",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "DateTime",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createOtherPlacePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateOtherPlacePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteOtherPlacePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Page",
+        "possibleTypes": null
+      },
+      {
+        "kind": "UNION",
+        "name": "PagePageComponentsDynamicZone",
+        "possibleTypes": [
+          {
+            "name": "ComponentHeaderHeader"
+          },
+          {
+            "name": "ComponentTextText"
+          },
+          {
+            "name": "ComponentPlacesP"
+          },
+          {
+            "name": "ComponentOtherPlacesOtherPlaces"
+          },
+          {
+            "name": "ComponentImageImage"
+          },
+          {
+            "name": "ComponentLinkLink"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentHeaderHeader",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentTextText",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentPlacesP",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Places",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentOtherPlacesOtherPlaces",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentImageImage",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ComponentLinkLink",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createPagePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updatePagePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deletePagePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createPlacePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updatePlacePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deletePlacePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Posts",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createPostPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updatePostPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deletePostPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UsersPermissionsPermission",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UsersPermissionsRole",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UsersPermissionsUser",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createRolePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateRolePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteRolePayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createUserPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateUserPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteUserPayload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Mutation",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createGalleryInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "GalleryInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "GalleryImagesDynamicZoneInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateGalleryInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "InputID",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editGalleryInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteGalleryInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createOtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "OtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateOtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editOtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteOtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createPageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "PagePageComponentsDynamicZoneInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updatePageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editPageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deletePageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updatePlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deletePlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createPostInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PostInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updatePostInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editPostInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deletePostInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createRoleInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "RoleInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateRoleInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editRoleInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteRoleInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createUserInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UserInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateUserInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editUserInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteUserInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Upload",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UsersPermissionsLoginInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Schema",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Type",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "__TypeKind",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Field",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__InputValue",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__EnumValue",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Directive",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "__DirectiveLocation",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "FileInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editFileInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentHeaderHeaderInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentHeaderHeaderInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentImageImageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentImageImageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentImagesImageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentImagesImageInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentLinkLinkInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentLinkLinkInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentOtherPlacesOtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentOtherPlacesOtherPlaceInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentPlacesPInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentPlacesPInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ComponentTextTextInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editComponentTextTextInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Time",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Date",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Long",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CacheControlScope",
+        "possibleTypes": null
+      }
+    ]
+  }
+  }

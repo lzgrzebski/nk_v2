@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/other-places",
+      "handler": "other-places.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/other-places/count",
+      "handler": "other-places.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/other-places/:id",
+      "handler": "other-places.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/other-places",
+      "handler": "other-places.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/other-places/:id",
+      "handler": "other-places.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/other-places/:id",
+      "handler": "other-places.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

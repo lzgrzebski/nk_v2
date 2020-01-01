@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_p_ps",
+  "info": {
+    "name": "Places",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "places": {
+      "collection": "places"
+    }
+  }
+}

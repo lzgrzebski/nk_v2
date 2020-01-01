@@ -1,0 +1,1 @@
+export { AttractionSmallItem } from './AttractionSmallItem';

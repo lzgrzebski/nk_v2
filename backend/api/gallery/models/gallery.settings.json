@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "galleries",
+  "info": {
+    "name": "Gallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "type": "dynamiczone",
+      "components": [
+        "images.images"
+      ]
+    }
+  }
+}

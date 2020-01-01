@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Other places",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "other_places": {
+      "collection": "other-places"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_other_places_other_places"
+}
