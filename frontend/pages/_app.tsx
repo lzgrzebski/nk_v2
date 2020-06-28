@@ -55,3 +55,9 @@ class MyApp extends App<Props> {
 }
 
 export default withData(MyApp);
+
+if (process.browser && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+}
