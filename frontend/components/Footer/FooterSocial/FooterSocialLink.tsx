@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.a`
     display: block;
-    color: #a0a0a0;
+    color: #000000;
     text-decoration: underline;
 
     margin-left: 15px;

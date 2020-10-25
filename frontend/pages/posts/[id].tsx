@@ -9,7 +9,7 @@ import { Photo } from '../../components/Photo';
 import TextWrapper from '../../components/TextField/TextWrapper';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import { ParagraphMarkdownRenderer } from '../../utils/markdown-renderers';
+import { ParagraphMarkdownRenderer, LinkRenderer } from '../../utils/markdown-renderers';
 import { Button } from '../../components/Button';
 
 const Post = () => {
@@ -37,6 +37,7 @@ const Post = () => {
                                     source={post.text}
                                     renderers={{
                                         paragraph: ParagraphMarkdownRenderer,
+                                        link: LinkRenderer
                                     }}
                                 ></ReactMarkdown>
                             </TextWrapper>

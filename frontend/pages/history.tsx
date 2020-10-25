@@ -4,7 +4,7 @@ import Query from '../components/query';
 import { PAGE_QUERY } from '../utils/queries';
 import { ContentContainer } from '../components/ContentContainer';
 import { Headline } from '../components/Headline';
-import { imagePreprocessor, FullParagraphMarkdownRenderer, FullTextMarkdownRenderer, ImageMarkdownRenderer } from '../utils/markdown-renderers';
+import { imagePreprocessor, FullParagraphMarkdownRenderer, FullTextMarkdownRenderer, ImageMarkdownRenderer, LinkRenderer } from '../utils/markdown-renderers';
 
 export default () => (
     <Query query={PAGE_QUERY} id={1}>
@@ -24,7 +24,8 @@ export default () => (
                                     renderers={{
                                         paragraph: FullParagraphMarkdownRenderer,
                                         text: FullTextMarkdownRenderer,
-                                        image: ImageMarkdownRenderer
+                                        image: ImageMarkdownRenderer,
+                                        link: LinkRenderer
                                     }}
                                 ></ReactMarkdown>
                             )

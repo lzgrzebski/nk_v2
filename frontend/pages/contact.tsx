@@ -11,7 +11,7 @@ import ContactSocialWrapper from '../components/Contact/ContactSocialWrapper';
 import ContactMap from '../components/Contact/ContactMap';
 import { Photo } from '../components/Photo';
 import ContactWrapper from '../components/Contact/ContactWrapper';
-import { ParagraphMarkdownRenderer } from '../utils/markdown-renderers';
+import { ParagraphMarkdownRenderer, LinkRenderer } from '../utils/markdown-renderers';
 
 export default () => (
     <Query query={PAGE_QUERY} id={4}>
@@ -27,7 +27,8 @@ export default () => (
                             <ReactMarkdown
                                 source={page.Page_components[0].text}
                                 renderers={{
-                                    paragraph: ParagraphMarkdownRenderer
+                                    paragraph: ParagraphMarkdownRenderer,
+                                    link: LinkRenderer
                                 }}
                             ></ReactMarkdown>
                             <ContactSocialWrapper>

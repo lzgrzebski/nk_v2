@@ -59,3 +59,7 @@ export const ListMarkdownRenderer = (props) => {
 export const ListItemMarkdownRenderer = (props) => {
     return createElement(ListItem, props, props.children)
 }
+
+export function LinkRenderer(props) {
+    return <a href={props.href} target="_blank">{props.children}</a>
+}

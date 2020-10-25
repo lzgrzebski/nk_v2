@@ -4,7 +4,7 @@ import Query from '../components/query';
 import { PAGE_QUERY } from '../utils/queries';
 import { ContentContainer } from '../components/ContentContainer';
 import { Headline } from '../components/Headline';
-import { ParagraphMarkdownRenderer } from '../utils/markdown-renderers';
+import { ParagraphMarkdownRenderer, LinkRenderer } from '../utils/markdown-renderers';
 import TopContentContainer from '../components/Home/TopContentContainer';
 import TopWrapper from '../components/Home/TopWrapper';
 import TopHeadline from '../components/Home/TopHeadline';
@@ -24,7 +24,8 @@ export default () => (
                             <ReactMarkdown
                                 source={page.Page_components[0].text}
                                 renderers={{
-                                    paragraph: ParagraphMarkdownRenderer
+                                    paragraph: ParagraphMarkdownRenderer,
+                                    link: LinkRenderer
                                 }}
                             ></ReactMarkdown>
                             <Button><Link href="/attractions"><a>{page.Page_components[1].title}</a></Link></Button>

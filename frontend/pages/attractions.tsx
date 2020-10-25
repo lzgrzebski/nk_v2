@@ -6,7 +6,7 @@ import { Headline } from '../components/Headline';
 import { AttractionItem } from '../components/AttractionItem';
 import ReactMarkdown from 'react-markdown';
 import TextWrapper from '../components/TextField/TextWrapper';
-import { ParagraphMarkdownRenderer, ListMarkdownRenderer, ListItemMarkdownRenderer } from '../utils/markdown-renderers';
+import { ParagraphMarkdownRenderer, ListMarkdownRenderer, ListItemMarkdownRenderer, LinkRenderer } from '../utils/markdown-renderers';
 import { AttractionSmallItem } from '../components/AttractionSmallItem';
 import Button from '../components/Button/Button';
 
@@ -43,7 +43,8 @@ export default () => (
                                                     renderers={{
                                                         paragraph: ParagraphMarkdownRenderer,
                                                         list: ListMarkdownRenderer,
-                                                        listItem: ListItemMarkdownRenderer
+                                                        listItem: ListItemMarkdownRenderer,
+                                                        link: LinkRenderer
                                                     }}
                                                 ></ReactMarkdown>
                                             </TextWrapper>

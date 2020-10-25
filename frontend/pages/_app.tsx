@@ -14,6 +14,11 @@ interface Props {
 }
 
 class MyApp extends App<Props> {
+    componentDidMount() {
+        if(process.browser && document){
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        }
+    }
     render() {
         return (
             <ApolloProvider client={this.props.apollo}>
